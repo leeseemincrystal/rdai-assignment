@@ -47,11 +47,6 @@ def generate_response(text):
 
     return {"response": response}
 
-@app.get("/")
-def read_root():
-    return {"Hello": "World"}
-
-
-@app.post("/request/")
-def read_item(request: str):
+@app.post("/request")
+def query_request(request: str):
     return generate_response(request)
