@@ -1,5 +1,3 @@
-# rdai-assignment
-
 # Run application
 Run the following command to run application on docker <br/>
 docker build -t rdai . <br/>
